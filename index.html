@@ -11,15 +11,21 @@
 
 <body>
     <div class="login-container">
-        <h2>51 learn 网</h2>
+        <h2>51learn 登录/注册</h2>
         <form id="loginForm">
             <input type="text" id="username" placeholder="用户名" />
             <input type="password" id="password" placeholder="密码" />
             <button type="button" onclick="login()">登录</button>
         </form>
+        <form id="registerForm" style="display: none;">
+            <input type="text" id="registerUsername" placeholder="注册用户名" />
+            <input type="password" id="registerPassword" placeholder="注册密码" />
+            <button type="button" onclick="register()">注册</button>
+        </form>
+        <button type="button" onclick="toggleForm()">注册</button>
     </div>
 
-    <script src="login.js"></script>
+    <script src="function.js"></script>
 </body>
 
 </html>
